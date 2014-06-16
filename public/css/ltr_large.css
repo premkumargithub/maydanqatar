@@ -1,0 +1,160 @@
+#alt_lang h3{
+	line-height: 58px;
+}
+header#site > img,
+header#site > h3{
+	float: left;
+}
+header#site > span,
+header#site > a{
+	float: right;
+}
+.head:before{
+	left: -9999px;
+}
+
+p{
+	font-size: 1.125em;
+}
+.intro .card{
+	float: left;
+}
+.preview{
+	padding-left: 160px;
+}
+.preview .image,
+.preview .calendar {
+	margin-right: 20px;
+}
+.preview h2 {
+	font-size:2.250em;
+}
+.preview .meta{
+	left: 0;
+}
+
+
+#auth form label{
+	padding-right: 20px;
+}
+#auth h2{
+	text-align: right;
+}
+#local-login,
+#local-register{
+	float: left;
+	padding-right: 20px;
+}
+#social-login,
+#login > div,
+#register > div,
+#auth #register input[type="checkbox"]{
+	float: right;
+}
+#register div:nth-child(4){
+	text-align: right;
+}
+#auth input[type="submit"]{
+	float: right;
+}
+#auth form label{
+	min-width: 150px;
+}
+#auth input[type="text"],
+#auth input[type="password"],
+#auth input[type="submit"]{
+	width: calc(100% - 150px);
+}
+
+.widget .social li{
+	float: left;
+}
+.widget .social li a{
+	margin-right: 14px;
+}
+.widget .social li:nth-child(3n+2) a {
+	margin-left: 7px;
+	margin-right: 7px;
+}
+.widget .social li:nth-child(3n+3) a {
+	margin-right: 0;
+	margin-left: 14px;
+}
+.widget .social i {
+	float: left;
+}
+.full_content.event .calendar.thumb{
+	left: 0;
+}
+.full_content #meta > .button{
+	right: 0;
+}
+.full_content #meta > .button i{
+	float: left;
+}
+.full_content #meta > div{
+	left: 0;
+}
+.full_content #meta > div.tags{
+	right: 0;
+	left: auto;
+	text-align: left;
+}
+.full_content h1{
+	line-height: 1em;
+}
+
+
+#sub .taghub > .tag,
+#sub .taghub > .follow,
+#sub .taghub .buttonbar,
+.buttonbar li{
+	float: left;
+}
+#sub .taghub .buttonbar{
+	margin-left: 50px;
+}
+.has_sub #sub .taghub > .tag,
+.has_sub #sub .taghub > .follow,
+#sub .taghub .buttonbar{
+	float: left;
+}
+#sub .taghub .buttonbar{
+	margin-left: 50px;
+}
+
+.comment .user {
+	float: left;
+	margin-right: 20px;
+}
+.replies{
+	padding-left: 160px;
+}
+
+/* MEDANI */
+.profile{
+	padding-left: 160px;
+}
+.medani .avatar,
+.username{
+	left: 0;
+}
+.medani .tags{
+	padding-left: 160px;
+}
+.medani .posts .heading {
+    margin-left: 160px;
+}
+
+.medani .tag-list li{
+	float: left;
+	margin-right: 1.33%;
+}
+.medani .tag-list li:nth-child(3n+3) {
+    margin-right: 0;
+    margin-left: 1.33%;
+}
+
+.simplecomment{
+	padding-right: 160px;
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'serifaroman';
+    src: url('../fonts/serifa_55_roman-webfont.eot');
+    src: url('../fonts/serifa_55_roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/serifa_55_roman-webfont.woff') format('woff'),
+         url('../fonts/serifa_55_roman-webfont.ttf') format('truetype'),
+         url('../fonts/serifa_55_roman-webfont.svg#serifaroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaNeueLTW2055Roman';
+    src: url('../fonts/HelveticaNeueLTW20-Roman.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelveticaNeueLTW20-Roman.ttf') format('truetype'); /* Safari, Android, iOS */
+         url('../fonts/HelveticaNeueLTW20-Roman.svg#HelveticaNeueLTW2055Roman') format('svg'), /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

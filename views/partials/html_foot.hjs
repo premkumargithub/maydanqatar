@@ -1,0 +1,35 @@
+
+  <!-- todo: better to have one file with both languages and choose at client at runtime? -->
+	<script src="/js/_gen/i18n/{{language.code}}.js" type="text/javascript"></script>
+
+  {{#production}}
+  	{{#resources.js.production}}
+  		<script src="{{config.urls.static}}{{{name}}}" type="text/javascript"></script>
+  	{{/resources.js.production}}
+  {{/production}}
+
+  {{#debug}}
+  	{{#resources.js.debug}}
+			<script src="{{config.urls.static}}{{{name}}}" type="text/javascript"></script>
+		{{/resources.js.debug}}
+  {{/debug}}
+
+	{{#production}}
+		{{#resources.jsx.components}}
+			<script src="{{config.urls.static}}{{{name}}}" type="text/javascript"></script>
+		{{/resources.jsx.components}}
+    <script defer="true" type="text/javascript" src="/js/google_analytics.js" ></script>
+	{{/production}}
+
+	{{#debug}}
+		{{#resources.jsx.components}}
+			<script src="{{config.urls.static}}{{{name}}}" type="text/jsx"></script>
+		{{/resources.jsx.components}}
+	{{/debug}}
+
+  <script type="text/javascript">
+    app.user = {{#json}}user{{/json}}
+  </script>
+
+</body>
+</html>

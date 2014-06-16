@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot?-uchehh');
+	src:url('/fonts/icomoon.eot?#iefix-uchehh') format('embedded-opentype'),
+		url('/fonts/icomoon.woff?-uchehh') format('woff'),
+		url('/fonts/icomoon.ttf?-uchehh') format('truetype'),
+		url('/fonts/icomoon.svg?-uchehh#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-video:before {
+	content: "\e602";
+}
+.icon-rss-ltr:before {
+	content: "\e600";
+}
+.icon-comment:before {
+	content: "\e604";
+}
+.icon-tag-en:before {
+	content: "\e605";
+}
+.icon-tag-ar:before {
+	content: "\e606";
+}
+.icon-nav:before {
+	content: "\e607";
+}
+.icon-search:before {
+	content: "\e608";
+}
+.icon-tag-outline-en:before {
+	content: "\e609";
+}
+.icon-tag-outline-ar:before {
+	content: "\e60a";
+}
+.icon-bookmark-outline:before {
+	content: "\e60b";
+}
+.icon-heart:before {
+	content: "\e60c";
+}
+.icon-heart-outline:before {
+	content: "\e60d";
+}
+.icon-reply:before {
+	content: "\e60e";
+}
+.icon-rss-rtl:before {
+	content: "\e601";
+}
+.icon-facebook:before {
+	content: "\e60f";
+}
+.icon-twitter:before {
+	content: "\e610";
+}
+.icon-linkedin:before {
+	content: "\e611";
+}
+.icon-google-plus:before {
+	content: "\e612";
+}
+.icon-crown:before {
+	content: "\e613";
+}
+.icon-calendar-grid:before {
+	content: "\e614";
+}
+.icon-share:before {
+	content: "\e615";
+}
+.icon-tts:before {
+	content: "\e616";
+}
+.icon-calendar:before {
+	content: "\e617";
+}
+.icon-cal-list:before {
+	content: "\e618";
+}
+.icon-home:before {
+	content: "\e619";
+}
+.icon-power:before {
+	content: "\e61a";
+}
+.icon-settings:before {
+	content: "\e61b";
+}
+.icon-calendar-thin:before {
+	content: "\e61c";
+}
+.icon-user-thin:before {
+	content: "\e61d";
+}
+.icon-envelope-thin:before {
+	content: "\e603";
+}
+.icon-bookmark-outline-thin:before {
+	content: "\e61e";
+}
+.icon-plus:before {
+	content: "\e61f";
+}

@@ -1,0 +1,22 @@
+var _ = require('lodash');
+
+module.exports = function(config){
+
+	var defs = [
+		'../lib/plugins/user/plugin',
+		'../lib/plugins/comments/plugin',
+ 		'../lib/plugins/content/plugin',
+ 		'../lib/plugins/follow/plugin',
+ 		'../lib/plugins/auth/plugin',
+ 		'../lib/plugins/auth-local/plugin',
+ 		'../lib/plugins/auth-social/plugin',
+ 		'../lib/plugins/notification/plugin',
+ 		'../lib/plugins/share/plugin',
+ 		'mailing-async',
+ 		'../lib/plugins/message/plugin'
+	];
+
+	return _(defs).map(function(plugin_def){
+		return require(plugin_def)(config);
+	});
+};

@@ -1,0 +1,11 @@
+body {
+	direction: rtl;
+}
+
+img {
+	float: left;
+}
+
+a {
+	text-decoration: underline;
+}

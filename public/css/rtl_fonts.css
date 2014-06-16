@@ -1,0 +1,28 @@
+/* FONTS */
+@font-face {
+    font-family: 'HelveticaNeueLTW2045Light';
+    src: url('../fonts/HelveticaNeueLTW20-Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelveticaNeueLTW20-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+         url('../fonts/HelveticaNeueLTW20-Light.svg#HelveticaNeueLTW2045Light') format('svg'), /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'HelveticaNeueLTW2055Roman';
+    src: url('../fonts/HelveticaNeueLTW20-Roman.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelveticaNeueLTW20-Roman.ttf') format('truetype'); /* Safari, Android, iOS */
+         url('../fonts/HelveticaNeueLTW20-Roman.svg#HelveticaNeueLTW2055Roman') format('svg'), /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'HelveticaNeueLTW2075Bold';
+    src: url('../fonts/HelveticaNeueLTW20-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelveticaNeueLTW20-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+         url('/fonts/HelveticaNeueLTW20-Bold.svg#HelveticaNeueLTW2075Bold') format('svg'), /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

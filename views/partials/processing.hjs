@@ -1,0 +1,5 @@
+<div id="processing" class="hidden">
+<div id="processing-inner">
+<img src="/i/loader.gif"></img>
+</div>
+</div>

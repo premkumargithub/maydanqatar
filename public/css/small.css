@@ -1,0 +1,483 @@
+#content{
+	top: 44px;
+}
+
+/* HEADER */
+header{
+	width: 100%;
+	overflow: hidden;
+}
+header#site{
+	height: 44px;
+}
+header.head{
+	padding: 0 8px;
+}
+header > header > header > .head {
+	border-bottom: none;
+	height: 44px;
+}
+.head h3,
+.head li{
+	line-height: 44px;
+}
+.head h3{
+	font-size: 1.250em;
+	white-space: nowrap;
+}
+.head > div{
+	overflow: hidden;
+}
+header nav i{
+	padding: 6px;
+}
+#chrome{
+	position: relative;
+}
+/* TOUR SLIDER */
+.slider .cards > li {
+  position:absolute;
+  width: 100%;	
+  height: 100%;
+}
+.slider .hide-fw {
+	right:100%;
+}
+.slider .cards li.current-card-fw {
+	right:0px;
+	transition: right 1s;
+}
+.slider .cards li.previous-card-fw {
+	right:-100%;
+	transition: right 1s;
+}
+.slider .hide-bw {
+	left:100%;
+}
+.slider .cards li.current-card-bw {
+	left:0px;
+	transition: left 1s;
+}
+.slider .cards li.previous-card-bw {
+	left:-100%;
+	transition: left 1s;
+}
+.intro .cards span{
+	display: inline-block;
+	padding: 5%;
+}
+
+/* PREVIEW */
+.preview{
+	padding: 8px;
+}
+.preview h2{
+	margin-bottom: .2em;
+}
+.preview p{
+	display: none;
+}
+.preview .image{
+	width: 65px;
+	height: 65px;
+}
+.preview .tags {
+	padding-top: 10px;
+	overflow: hidden;
+	max-height: 70px;
+}
+.preview.event .date-range,
+.preview.event .time-range{
+	display: none;
+}
+
+/* Calendar thumb */
+.calendar{
+	width: 64px;
+	height: 64px;
+}
+.calendar .month{
+	font-size: 11px;
+	line-height: 20px;
+}
+.calendar .date{
+	font-size: 34px;
+	line-height: 38px;
+}
+.calendar:after {
+	height: 6px;
+	background: linear-gradient(#fff 50%, #666 50%);
+	background-size: 100% 2px;
+}
+
+/* TOUR INTRO*/
+.intro {
+	height: 260px;
+	text-align: center;
+}
+.intro img{
+	display: block;
+	margin: 0 auto;
+}
+
+/* sign in /up */
+#auth form label{
+	display: block;
+}
+#auth input[type="text"],
+#auth input[type="password"],
+#auth input[type="submit"]{
+	width: 100%;
+}
+#login .end_of_line{
+	padding: 5px 0 15px;
+}
+#register div:nth-child(4) > span{
+	max-width: 240px;
+	margin-bottom: 1em;
+}
+#local-register{
+	padding-bottom: .5em;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 1em;
+}
+
+/* ARTICLE PAGE */
+.full_content{
+	margin: 10px;
+	padding-bottom: 50px;
+}
+.full_content h1{
+	margin-bottom: 10px;
+}
+.full_content #meta > .button,
+.full_content #share,
+.full_content #meta .comments{
+	display: none;
+}
+.full_content #meta .rel_date{
+	display: block;
+	padding: 10px 0;
+}
+.full_content #meta .tags{
+	margin-bottom: 10px;
+}
+#toolbar{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #e5e5e5;
+	height: 44px;
+}
+#toolbar > span,
+#toolbar .sharecontainer{
+	display: block;
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	height: 44px;
+	position: relative;
+}
+#toolbar > span i,
+#toolbar .sharecontainer #sharebutton i{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+	font-size: 1.5em;
+}
+#toolbar > span .text,
+#toolbar .sharecontainer #sharebutton .text{
+	display: inline-block;
+	width: 100%;
+	line-height: 25px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#toolbar > span span,
+#toolbar #sharebutton,
+#toolbar #sharebutton span{
+	display: block;
+	font-size: 13px;
+	text-transform: lowercase;
+}
+.full_content .map{
+	height: 200px;
+}
+.full_content .media{
+	width: 100%;
+	height: 250px;
+}
+
+/* taghub*/
+.has_sub #content{
+	top: 82px;
+}
+.has_sub.search-page #content{
+	top: 93px;
+}
+.has_sub header#site{
+	height: 82px;
+	position: relative;
+}
+.has_sub.search-page header#site{
+	height: 93px;
+}
+.has_sub header#site nav{
+	position: relative;
+	z-index: 1;
+	top: 0;
+}
+.tag_content-page header#site nav,
+.tag_discuss-page header#site nav{
+	top: 4px;
+}
+.tag_content-page header#site nav a,
+.tag_discuss-page header#site nav a{
+	color: #4d4d4d;
+}
+
+.has_sub #sub .taghub{
+	padding: 0 10px;
+	position: absolute;
+	background: #e5e5e5;
+	top: 0;
+	width: 100%;
+	height: 82px;
+}
+.has_sub #sub .tag{
+	border: none;
+	background: none;
+	color: #4d4d4d;
+	height: auto;
+	line-height: 43px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.has_sub #sub .taghub .follow{
+	display: inline-block;
+	line-height: 43px;
+	color: #4d4d4d;
+}
+.has_sub #sub .taghub .follow i{
+	padding: 0 5px;
+}
+.has_sub #sub .buttonbar{
+	clear: both;
+	height: 25px;
+/*	display: flex;
+	flex-wrap: nowrap;*/
+	overflow: hidden;
+	border: 1px solid #4d4d4d;
+	border-right: none;
+}
+.has_sub .buttonbar li {
+	line-height: 23px;
+	/*flex-grow: 1;*/
+	text-align: center;
+	border-right: 1px solid #4d4d4d;
+	color: #4d4d4d;
+	font-size: .85em;
+	display: block;
+	width: 33.33%;
+}
+.has_sub .buttonbar li.active{
+	background: #4d4d4d;
+	color: #fff;
+}
+
+/* confirmation / taglist */
+.tag-list {
+	padding: 0 8px;
+	background: #e5e5e5;
+}
+.tag-list{
+	border-top: 1px solid #000;
+}
+.tag-list:first-child{
+	border-top: none;
+}
+
+.comment .user .avatar{
+	width: 36px;
+	height: 36px;
+}
+
+.reply_button{
+	position: absolute;
+	bottom: 0;
+}
+
+.sharebox-popup{
+	position: fixed;
+	bottom: 44px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	height: 250px;
+}
+.sharebox-popup .social li{
+	width: 100%;
+	height: 36px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+	background: #e5e5e5;
+}
+.sharebox-popup .social li i{
+	display: none;
+}
+.sharebox-popup .widget .social li a{
+	border-bottom: none;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	font-size: 20px;
+}
+
+.notification p{
+	font-size: .85em;
+}
+header#start.head{
+	position: absolute;
+	top: 0;
+	/*width: auto;
+	background: none;*/
+	height: 44px;
+}
+#content .start{
+	background: #4d4d4d;
+	padding-bottom: 60px; /* temporary */
+}
+#content .start > .link{
+	padding: 10px;
+	display: block;
+}
+#content .start .large_button{
+	width: 100%;
+	border: 1px solid #fff;
+}
+
+/* MEDANI */
+.medani{
+	padding: 16px 8px;
+}
+.medani .avatar {
+    height: 90px;
+    width: 90px;
+}
+.medani .preview{
+	padding: 8px 0;
+}
+.profile .about{
+	clear: both;
+}
+.profile .options{
+	padding-bottom: 16px;
+}
+.profile .username {
+    overflow: hidden;
+}
+.medani .username .follow {
+    height: 25px;
+    line-height: 25px;
+}
+.medani .heading{
+	border-top: 1px solid #4d4d4d;
+	line-height: 45px;
+	height: 45px;
+	margin-top: 20px;
+}
+.medani .about .heading{
+	border-top: none;
+}
+.medani .posts .heading{
+	border-bottom: 1px solid #4d4d4d;
+}
+.medani .heading > span{
+	font-size: 14px;
+}
+/*.medani .tags .tag{
+	clear: both;
+	background: #e5e5e5;
+	border-bottom: 1px solid #4d4d4d;
+	padding: 9px 0;
+}*/
+.medani .about .light_button{
+	width: 100%;
+}
+
+/* SETTING */
+.kv-logo,
+.qna-logo{
+	width: 46px;
+	height: 43px;
+	background-size: cover;
+}
+
+nav li{
+	margin: 0 10px;
+}
+
+.search_header{
+	background: #E5E5E5;
+	height: 44px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	padding: 6px 8px;
+	bottom: 0;
+}
+
+/* SEARCH */
+.search_result{
+	padding: 0 8px;
+	margin-top: 17px;
+}
+.search_result > section{
+	padding-bottom: 15px;
+}
+
+.search_result .heading > span{
+	font-size: 14px;
+}
+.search_result .tags .heading{
+	border-bottom: none;
+}
+.search_result > section.tags{
+	border-top: none;
+}
+
+.medani {
+    position: relative;
+}
+
+.avatar-selection {
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 8px; left: 8px;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.medani .avatar-selection .avatar {
+	height: 68px;
+	width: 68px;
+}
+
+#followers{
+	padding: 0 10px;
+}
+
+.simplecomment .user{
+	margin-bottom: 15px;
+}
+.simplecomment > div > span{
+	color: #595959;
+    font-size: 16px;
+}

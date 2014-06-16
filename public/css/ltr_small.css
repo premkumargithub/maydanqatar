@@ -1,0 +1,76 @@
+#alt_lang h3{
+	line-height: 30px;
+}
+.preview .image,
+.preview .calendar {
+	margin-right: 10px;
+}
+.preview h2 {
+	font-size:1.5em;
+}
+.rel_date{
+	font-size: 0.875em;
+}
+#auth form label{
+	text-align: left;
+}
+#auth #register input[type="checkbox"]{
+	float: right;
+}
+.full_content #body{
+	line-height: 1.5em;
+}
+
+.full_content.event .calendar.thumb{
+	float: left;
+	margin-right: 10px;
+}
+.has_sub #sub .tag{
+	max-width: 120px;
+}
+.has_sub #sub .taghub{
+	left: 0;
+}
+.has_sub #sub .taghub .follow{
+	float: right;
+	margin-right: 85px;	
+}
+.has_sub .buttonbar li {
+	float: left;
+}
+
+.comment .user .avatar{
+	margin-right: 15px;
+	float: left;
+}
+
+.replies{
+	padding-left: 51px;
+}
+.simplecomment > div:not(.user){
+	padding-left: 51px;
+}
+.simplecomment > div > span {
+   line-height: 18px;
+}
+header#start.head,
+.reply_button{
+	left: 0;
+}
+
+.medani .username .follow{
+	float: right;
+}
+.medani .avatar {
+    float: left;
+}
+.profile .options{
+    padding-left: 106px;
+}
+.profile .username {
+	padding-left: 16px;
+}
+
+nav ol{
+	text-align: right;
+}

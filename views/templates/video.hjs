@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        padding:0;
+        margin:0;
+      }
+    </style>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div class="video">
+      <div id="video" class="jw_video"></div>
+    </div>
+    <script type="text/javascript" src="{{config.jwplayer.plugin_url}}"></script>
+    <script type="text/javascript">
+      var height = {{#aspecth}}{{aspecth}}{{/aspecth}}{{^aspecth}}0{{/aspecth}};
+      var width = {{#aspectw}}{{aspectw}}{{/aspectw}}{{^aspectw}}0{{/aspectw}};
+      var config = {
+        file: '{{url}}'
+      };
+      if( width != 0 && height != 0 ){
+        if (width < height){
+          config.height = '100%';
+        } else {
+          config.width = '100%';
+        }
+        config.aspectratio = '{{aspectw}}:{{aspecth}}';
+      } else {
+        config.width = '100%';
+        config.height = '100%';
+      }
+      jwplayer('video').setup(config);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{{> html_head}}
+
+<div id="main">
+<div id="chrome">
+
+<header class="head" id="site">
+  <img src="/i/logo.gif">
+  <h3>{{i18n.site.title}}</h3>
+</header>
+<header class="head">
+  <div class="action-result">
+    {{#success}}
+      <p>{{i18n.confirmation.sent}}</p>
+    {{/success}}
+    {{^success}}
+      <p>{{i18n.confirmation.not_sent}}</p>
+    {{/success}}
+  </div>
+</header>
+
+</div>
+</div>
+
+{{> html_foot_min}}

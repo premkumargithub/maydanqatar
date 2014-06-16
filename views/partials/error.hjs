@@ -1,0 +1,3 @@
+{{#error}}
+<span class="error">{{#errorMessage}}{{/errorMessage}}</span>
+{{/error}}

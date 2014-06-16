@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        padding:0;
+        margin:0;
+      }
+      #canvas {
+        width:100%;
+        height:100%;
+      }
+    </style>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div id="canvas"></div>
+    <script type="text/javascript">
+
+      radians = function(degrees){
+        return degrees * (Math.PI / 180);
+      };
+
+      distance = function(from, to){
+        var R = 6371; // km
+        var dlat = radians(to.lat()-from.lat());
+        var dlon = radians(to.lng()-from.lng());
+        var flat = radians(from.lat());
+        var tlat = radians(to.lat());
+
+        var a = Math.sin(dlat/2) * Math.sin(dlat/2) +
+                Math.sin(dlon/2) * Math.sin(dlon/2) * Math.cos(flat) * Math.cos(tlat);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+      };
+
+      showRelativeToUserIfPossible = function(map, position){
+        if (navigator.geolocation) {
+          return navigator.geolocation.getCurrentPosition(function(mygeo){
+            var me = new google.maps.LatLng(mygeo.coords.latitude, mygeo.coords.longitude);
+
+            // show me
+            var marker = new google.maps.Marker({
+              map: map,
+              position: me,
+              title: '{{i18n.content.my_location}}',
+              animation: google.maps.Animation.DROP,
+              flat:false
+            });
+            var infoWindow = new google.maps.InfoWindow();
+            infoWindow.setContent('{{label}}');
+            google.maps.event.addListener(marker, 'click', function() {
+                infoWindow.open(map, marker);
+            });
+
+            if (distance(me, position) < 8000){
+              var bounds = new google.maps.LatLngBounds();
+              bounds.extend(position);
+              bounds.extend(me);
+              console.log(bounds);
+              map.fitBounds(bounds);
+            }
+          });
+        } else {
+          console.log("can't get my location from the browser");
+        }
+      };
+
+      window.drawMap = function(){
+        var position = new google.maps.LatLng({{lat}},{{lon}});
+        var options = {
+          center: position,
+          zoom: 13
+        };
+        var el = document.getElementById('canvas');
+        var map = new google.maps.Map(el, options);
+        var marker = new google.maps.Marker({
+          map: map,
+          position: position,
+          title: '{{label}}',
+          animation: google.maps.Animation.DROP,
+          flat:false
+        });
+        var infoWindow = new google.maps.InfoWindow();
+        infoWindow.setContent('{{label}}');
+        google.maps.event.addListener(marker, 'click', function() {
+            infoWindow.open(map, marker);
+        });
+
+        showRelativeToUserIfPossible(map, position);
+      };
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key={{config.googlemaps.api_key}}&sensor=false&language={{language.code}}&callback=drawMap"></script>
+  </body>
+</html>

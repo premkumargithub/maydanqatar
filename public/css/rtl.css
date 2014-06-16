@@ -1,0 +1,244 @@
+
+html {
+	direction:rtl;
+}
+body{
+	font-family: 'HelveticaNeueLTW2055Roman';
+	font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, input[type="submit"], .light_button{
+	font-family: 'HelveticaNeueLTW2075Bold';
+}
+textarea{
+	font-family: 'HelveticaNeueLTW2055Roman';
+}
+p{
+	line-height: 1.5em;
+}
+.light_button {
+	line-height: 30px;
+}
+#alt_lang h3{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#menu {
+	left:0px;
+}
+#menu li i{
+	margin-left: 10px;
+}
+#menu li span{
+	margin-top: -7px;
+}
+#menu .groups {
+	left:0;
+}
+
+#menu .outside {
+	left:250px;
+	right:0;
+}
+
+#menu.shown {
+	left:0px;
+	transition: left 0.4s;
+}
+
+#menu.hidden {
+	left:-100%;
+	transition: left 1s;
+}
+
+header nav {
+	float: left;
+}
+
+.start_of_line {
+	float:right;
+}
+
+.end_of_line {
+	float:left;
+}
+
+.preview h2 {
+	line-height: 1.3em;
+}
+.preview .comments {
+	float:left;
+}
+.preview .comments i{
+	margin-left: 5px;
+}
+.preview .comments span{
+	float: left;
+}
+.preview .image {
+	float:right;
+}
+
+.preview .calendar {
+	float:right;
+}
+
+.tag {
+	margin:0 0 5px 5px;
+	border-top-left-radius:8px;
+	float: right;
+}
+.tag > span {
+	display: block;
+	margin-top: -2px;
+	font-size: 14px;
+}
+.tag i{
+	margin-left: 10px;
+}
+
+.slider .hide-fw {
+	right:100%;
+}
+.slider .cards li.current-card-fw {
+	right:0px;
+	transition: right 1s;
+}
+.slider .cards li.previous-card-fw {
+	right:-100%;
+	transition: right 1s;
+}
+.slider .hide-bw {
+	left:100%;
+}
+.slider .cards li.current-card-bw {
+	left:0px;
+	transition: left 1s;
+}
+.slider .cards li.previous-card-bw {
+	left:-100%;
+	transition: left 1s;
+}
+
+.slider .prev{
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	right: 10px;
+}
+.slider .next{
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg);
+	left: 10px;
+}
+.cards span{
+	font-size: 1.250em;
+	line-height: 1.4em;
+}
+
+/* sign in /up */
+#auth form{
+	font-size: 18px;
+	text-align: left;
+}
+#auth input[type="checkbox"]{
+	margin: 12px 12px 12px 0;
+}
+#login div:nth-child(3){
+	text-align: left;
+}
+#auth #register input[type="checkbox"]{
+	margin: 5px 12px 12px 0;
+}
+#register div:nth-child(4) > span{
+	font-size: .85em;
+	line-height: 1.2em;
+}
+#auth input[type="submit"],
+#social-login a{
+	min-height: 36px;
+	line-height: 19px;
+}
+#social-login a{
+	padding: 5px 10px;
+}
+
+
+.simplecomment .hearts{
+	left: 0;
+}
+.simplecomment .hearts a{
+	margin-right: 5px;
+}
+
+.comment .userBox > span{
+	line-height: 1.2em;
+}
+.comment .userBox .rel_date{
+	margin-top: -10px;
+}
+
+
+.tag-list .follow {
+	line-height: 44px;
+	float: left;
+}
+.tag-list li .heart{
+	float: left;
+}
+.tag-list li .heart > span{
+	float: left;
+}
+.tag-list li .heart i{
+	margin-left: 10px;
+}
+.medani .heading > span, .upload-form {
+  left: 0;
+}
+.heading .link{
+	left: 0;
+}
+
+.lightbox .close {
+  left: -15px;
+}
+
+.clx .x:before {
+  margin-right:11px;
+}
+
+.clx .x:after {
+  margin-right:2px;
+}
+.search_result .heading{
+	line-height: 50px;
+}
+.search_result .heading h3{
+	float: right;
+}
+.search_result .heading > span{
+	float: left;
+}
+
+.search_criteria .link {
+  float:left;
+}
+
+
+/* FOLLOWER */
+.follower .user > span{
+	float: right;
+}
+.follower > span{
+	float: left;
+}
+.follower > span.user{
+	float: right;
+}
+.follower .avatar{
+	margin-left: 16px;
+	float: right;
+}
+
+.fakefile {
+	right: 0px;
+}

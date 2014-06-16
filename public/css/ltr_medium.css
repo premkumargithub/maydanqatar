@@ -1,0 +1,131 @@
+#alt_lang h3{
+	line-height: 58px;
+}
+header#site > img,
+header#site > h3{
+	float: left;
+}
+header#site > span,
+header#site > a{
+	float: right;
+}
+.head:before{
+	left: -9999px;
+}
+p{
+	font-size: 1.125em;
+}
+.preview .image,
+.preview .calendar {
+	margin-right: 20px;
+}
+.preview h2 {
+	font-size:2em;
+}
+
+
+#auth form label{
+	padding-right: 20px;
+}
+#auth h2{
+	text-align: right;
+}
+#local-login,
+#local-register{
+	float: left;
+	padding-right: 20px;
+}
+#social-login,
+#login > div,
+#register > div,
+#auth #register input[type="checkbox"]{
+	float: right;
+}
+#register div:nth-child(4){
+	text-align: right;
+}
+#auth input[type="submit"]{
+	float: right;
+}
+#auth form label{
+	width: 150px;
+}
+#auth input[type="text"],
+#auth input[type="password"],
+#auth input[type="submit"]{
+	width: calc(100% - 150px);
+}
+
+.widget .social li{
+	float: left;
+}
+.widget .social li a{
+	margin-right: 10px;
+}
+.widget .social i {
+	float: left;
+}
+.widget .social li:nth-child(2n) a {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.full_content #meta > .button{
+	float: right;
+}
+.full_content.event .calendar.thumb{
+	left: 0;
+}
+.full_content.event h1,
+.full_content.event .date-range,
+.full_content.event .time-range{
+	padding-left: 160px;
+}
+.full_content.event .tag.venue{
+	margin-left: 160px;
+}
+#meta .comments{
+	margin-left: 18px;
+}
+
+
+#sub .taghub > .tag,
+#sub .taghub > .follow,
+#sub .taghub .buttonbar,
+.buttonbar li{
+	float: left;
+}
+#sub .taghub .buttonbar{
+	margin-left: 50px;
+}
+
+.comment .user{
+	float: left;
+	margin-right: 20px;
+}
+.replies{
+	padding-left: 160px;
+}
+
+/* MEDANI */
+.medani .avatar {
+    float: left;
+}
+.profile .options {
+    padding-left: 160px;
+}
+.profile .username {
+    padding-left: 20px;
+}
+
+.medani .tag-list li{
+	float: left;
+	margin-right: 1.5%;
+}
+.medani .tag-list li:nth-child(2n) {
+    margin-left: 1.5%;
+    margin-right: 0;
+}
+
+.simplecomment{
+	padding-right: 60px;
+}

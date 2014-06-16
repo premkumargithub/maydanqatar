@@ -1,0 +1,39 @@
+{{> html_head}}
+
+<div id="main">
+<div id="chrome">
+<header class="head" id="site">
+  <img src="/i/logo.gif">
+  <h3>{{i18n.site.title}}</h3>
+</header>
+<header class="head">
+  <div id="reg-confirmation-failed" class="action-result">
+    <p>{{i18n.confirmation.failure}}</p>
+    <p>
+      {{> error}}
+    </p>
+    {{#register}}
+      <p>{{i18n.confirmation.re_register}}</p>
+    {{/register}}
+    {{#regenerate}}
+      <p>
+        <a class="regenerate" href="/lang/{{language.code}}/validate/{{email}}/" onclick="showProcessing()">
+          {{i18n.confirmation.re_generate}}</a>
+      </p> 
+    {{/regenerate}}
+  </div>
+  {{> processing}}
+</header>
+
+</div>
+</div>
+
+	
+<script type="text/javascript">
+  function showProcessing(){
+    $('#processing').removeClass('hidden');
+    return true; 
+  }
+</script>
+
+{{> html_foot_min}}

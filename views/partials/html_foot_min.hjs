@@ -1,0 +1,9 @@
+
+	<script defer="true" src="/js/_gen/i18n/{{language.code}}.js" type="text/javascript"></script>
+
+  {{#resources.js.app}}
+		<script src="{{config.urls.static}}{{{name}}}" type="text/javascript"></script>
+	{{/resources.js.app}}
+
+</body>
+</html>

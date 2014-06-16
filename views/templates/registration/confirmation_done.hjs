@@ -1,0 +1,26 @@
+{{> html_head}}
+
+<div id="main">
+<div id="chrome">
+<header class="head" id="site">
+  <img src="/i/logo.gif">
+  <h3>{{i18n.site.title}}</h3>
+</header>
+<header class="head">
+  <div class="action-result">
+    {{#loggedIn}}
+      <p>{{i18n.confirmation.loggedin}}</p>
+    {{/loggedIn}}
+    {{^loggedIn}}
+      <p>{{i18n.confirmation.done}}</p>
+    {{/loggedIn}}
+    <p>
+     <a href="/lang/{{language.code}}/"> {{i18n.confirmation.login_site}}</a> {{i18n.confirmation.login_app}}
+    </p>
+  </div>
+</header>
+
+</div>
+</div>
+
+{{> html_foot_min}}

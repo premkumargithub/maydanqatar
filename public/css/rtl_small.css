@@ -1,0 +1,77 @@
+.preview .image,
+.preview .calendar {
+	margin-left: 10px;
+}
+.preview h2 {
+	font-size:1.313em;
+}
+.rel_date{
+	font-size: 0.750em;
+}
+#auth form label{
+	text-align: right;
+}
+#auth #register input[type="checkbox"]{
+	float: left;
+}
+.full_content.event .calendar.thumb{
+	float: right;
+	margin-left: 10px;
+}
+.has_sub #sub .tag{
+	max-width: 107px;
+}
+.has_sub #sub .taghub{
+	right: 0;
+}
+.has_sub #sub .taghub .follow{
+	float: left;
+	margin-left: 100px;	
+	margin-top: -2px;
+	font-size: .85em;
+}
+.has_sub #sub .tag span {
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.has_sub .buttonbar li {
+	float: right;
+}
+
+.comment .user .avatar{
+	margin-left: 15px;
+	float: right;
+}
+.replies{
+	padding-right: 51px;
+}
+.simplecomment > div:not(.user){
+	padding-right: 51px;
+}
+
+header#start.head,
+.reply_button{
+	right: 0;
+}
+.full_content h1{
+	line-height: 1.2em;
+}
+
+
+.medani .username .follow{
+	float: left;
+}
+.medani .avatar {
+    float: right;
+}
+.profile .options{
+    padding-right: 106px;
+}
+.profile .username {
+	padding-right: 16px;
+}
+
+nav ol{
+	text-align: left;
+}
